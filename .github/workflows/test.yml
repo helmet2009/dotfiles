@@ -1,0 +1,14 @@
+name: Test Dotfiles  # ชื่อ Workflow
+on: [push]  # ทำงานเมื่อมี Push ขึ้น Repository
+
+jobs:
+  test:  # ชื่องาน
+    runs-on: arch-latest  
+    steps:
+      # ขั้นตอนที่ 1: ดึงโค้ดจาก Repository
+      - name: Checkout Code
+        uses: actions/checkout@v4  # ใช้ Action สำเร็จรูปสำหรับดึงโค้ด
+      
+      # ขั้นตอนที่ 2: แสดงรายการไฟล์ทั้งหมดใน Repository
+      - name: List Files
+        run: ls -R  # รันคำสั่ง Linux เพื่อแสดงไฟล์แบบ recursive
