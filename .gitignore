@@ -1,3 +1,15 @@
+# ละเว้นไฟล์ลับ
+*.env
+*.secret
+*.token
+
+# ละเว้นไฟล์ Cache
+.cache/
+tmp/
+
+# ละเว้นไฟล์ระบบ
+.DS_Store
+
 __pycache__/
 bookmarks
 .idea
