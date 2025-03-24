@@ -1,1 +1,1 @@
-gnome-calculator
+qalculate-gtk

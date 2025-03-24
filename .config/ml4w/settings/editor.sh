@@ -1,1 +1,1 @@
-gnome-text-editor
+Visual Studio Code
